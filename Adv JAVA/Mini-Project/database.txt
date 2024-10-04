@@ -1,0 +1,56 @@
+mysql> create database adv_java_project;
+Query OK, 1 row affected (0.04 sec)
+
+mysql> use adv_java_project;
+Database changed
+
+mysql> CREATE TABLE std_info (
+    ->     enroll INT PRIMARY KEY NOT NULL,
+    ->     name VARCHAR(50) NOT NULL,
+    ->     branch VARCHAR(25),
+    ->     semester VARCHAR(25)
+    -> );
+Query OK, 0 rows affected (0.15 sec)
+
+mysql> desc std_info;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| enroll   | int         | NO   | PRI | NULL    |       |
+| name     | varchar(50) | NO   |     | NULL    |       |
+| branch   | varchar(25) | YES  |     | NULL    |       |
+| semester | varchar(25) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+
+
+CREATE TABLE Students (
+    enrollment_no VARCHAR(20) PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    department VARCHAR(50) NOT NULL,
+    semester VARCHAR(20) NOT NULL,
+    course VARCHAR(100) NOT NULL,
+    password VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE Faculty (
+    fac_id VARCHAR(20) PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    department VARCHAR(50) NOT NULL,
+    semester VARCHAR(20) NOT NULL,
+    courses VARCHAR(100) NOT NULL,
+    password VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE Marks (
+    enrollment_no VARCHAR(20),
+    course_code VARCHAR(20),
+    course_title VARCHAR(100),
+    theory_marks INT,
+    practical_marks INT,
+    term_work INT,
+    viva INT,
+    total INT,
+    result VARCHAR(10),
+    PRIMARY KEY (enrollment_no, course_code),
+    FOREIGN KEY (enrollment_no) REFERENCES Students(enrollment_no)
+);
