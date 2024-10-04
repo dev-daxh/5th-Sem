@@ -1,4 +1,4 @@
-package Assigment.OpenServer;
+package OpenServer;
 
 import java.io.*;
 import java.net.*;
