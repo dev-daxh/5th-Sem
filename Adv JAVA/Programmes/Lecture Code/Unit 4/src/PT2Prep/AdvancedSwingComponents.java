@@ -48,7 +48,7 @@ public class AdvancedSwingComponents {
                 {"Mike", 35, "Male"}
         };
         JTable table = new JTable(new DefaultTableModel(data, columnNames));
-        tablePanel.add(new JScrollPane(table));
+        tablePanel.add((table));
         tabbedPane.addTab("Table", tablePanel);
 
         // Tab 4: Progress Bar
