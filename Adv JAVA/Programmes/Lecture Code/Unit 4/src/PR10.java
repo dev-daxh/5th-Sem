@@ -10,7 +10,7 @@ public class PR10 {
         JFrame frame = new JFrame("Swing Components Demo");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(400, 300);
-        frame.setLayout(new GridLayout(6, 3));
+        frame.setLayout(new GridLayout(6,3));
 
         // Create components
         JLabel nameLabel = new JLabel("Name:");
