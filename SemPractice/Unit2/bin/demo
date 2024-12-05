@@ -1,0 +1,38 @@
+Networking (TCP/IP, Socket Programming)
+2-Mark Questions:
+1. What is the difference between TCP and UDP?
+2. What is the function of the InetAddress class in Java?
+3. How does a DatagramSocket work in Java?
+4. What are the methods provided by the URLConnection class?
+3-Mark Questions:
+1. Explain the process of establishing a TCP connection between a client and a server using
+Java.
+2. Write a Java program to demonstrate a basic TCP Client-Server communication.
+3. How would you retrieve the IP address of a remote host using the InetAddress class?
+4. compare between URI and URL
+6-Mark Questions:
+1. Write a Java program using ServerSocket and Socket to implement a TCP-based
+client-server communication, where the client sends a message to the server, and the server
+replies.
+2. Describe the process of establishing a connectionless client-server communication using
+DatagramSocket and DatagramPacket.
+
+2-Mark Questions:
+1. What is the role of the JDBC Driver Manager in the JDBC architecture?
+2. What is the difference between Statement and PreparedStatement in JDBC?
+3. How do you establish a connection to a database in JDBC?
+4. name all JDBC Driver
+3-Mark Questions:
+1. What are the steps involved in writing a JDBC program to connect to a database and
+execute a query?
+2. Write a JDBC program to insert a record into a database table.
+3. Explain the three-tier JDBC architecture and its advantages.
+4. Justify why Prepared statment is effiecnt with code
+6-Mark Questions:
+1. Write a JDBC program to retrieve data from a database using a SELECT query and
+display it in the console .
+
+2. Discuss the different types of JDBC Drivers (Type 1, Type 2, Type 3, Type 4) with
+examples.
+
+3. Write a JDBC program to insert data to a table using a until user stop using preapred statement .
